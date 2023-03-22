@@ -6,7 +6,10 @@
 void InputArray(int[] array)
 {
   for (int i = 0; i < array.Length; i++)
-    array[i] = new Random().Next(0, 2);
+    {
+    Console.WriteLine("Введите элемент массива");
+    array[i] = Convert.ToInt32(Console.ReadLine());
+    }
 }
 
 Console.Clear();
